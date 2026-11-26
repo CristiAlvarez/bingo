@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <title>Bingo de 90 bolas</title>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <main>
+            <h1>Bingo de 90 bolas</h1>
+
+            <section class="top">
+                <div class="bombo" id="bombo" aria-hidden="true"><div class="rot" id="rot"></div></div>
+                <div class="ball" id="ball" aria-live="polite">–</div>
+                <div>
+                    <div class="info" id="count">Pulsa «Sacar bola» para empezar.</div>
+                    <div class="ctl">
+                        <button id="draw">Sacar bola</button>
+                        <button id="mix" class="alt">Revolver bombo</button>
+                        <button id="bingo" class="bingo">¡BINGO!</button>
+                        <button id="reset" class="alt">Nueva partida</button>
+                        <a class="btn" href="espejo.html" target="_blank" rel="noopener">Abrir pantalla reflejo</a>
+                    </div>
+                    <div class="ctl info">
+                        <label><input type="checkbox" id="voice" /> Cantar los números</label>
+                        <label><input type="checkbox" id="sonido" checked /> Sonido del bombo</label>
+                    </div>
+                    <div class="last" id="last" aria-label="Últimas bolas"></div>
+                </div>
+            </section>
+
+            <h2>Tablero</h2>
+            <div class="board" id="board"></div>
+        </main>
+
+        <script src="assets/js/bombo.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

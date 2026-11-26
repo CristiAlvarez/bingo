@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <title>Bingo de 90 bolas · Pantalla reflejo</title>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body class="espejo">
+        <main>
+            <div class="bombo" id="bombo" aria-hidden="true"><div class="rot" id="rot"></div></div>
+            <div class="ball" id="ball" aria-live="polite">–</div>
+            <div class="board" id="board"></div>
+        </main>
+        <div class="bingo-overlay" id="bingoOverlay" role="alert">
+            <div class="confeti" id="confeti" aria-hidden="true"></div>
+            <div class="bingo-texto">
+                <div class="bingo-titulo" aria-label="¡Bingo!"><span>¡</span><span>B</span><span>I</span><span>N</span><span>G</span><span>O</span><span>!</span></div>
+                <p class="bingo-sub">Han cantado bingo</p>
+                <p class="bingo-esp">
+                    Esperad a la revisión del cartón<span class="puntos"><i>.</i><i>.</i><i>.</i></span>
+                </p>
+            </div>
+        </div>
+        <button id="sonidoBtn" type="button">🔇 Activar sonido</button>
+        <script src="assets/js/bombo.js"></script>
+        <script src="assets/js/espejo.js"></script>
+    </body>
+</html>
