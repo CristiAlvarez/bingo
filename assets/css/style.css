@@ -6,7 +6,7 @@
     --felt: #000;
     --ball: #abb3df;
     --red: #272b35;
-    --brass: #b16a779a;
+    --brass: #272b35;
     --line: #d9ceb0;
     box-sizing: border-box;
     padding-top: env(safe-area-inset-top, 0px);
@@ -326,7 +326,7 @@ a.btn:focus-visible {
     place-items: center;
     text-align: center;
     overflow: hidden;
-    background: rgba(10, 43, 35, 0.95);
+    background: #abb3df;
     color: #f2ead6;
 }
 .espejo.cantando .bingo-overlay {
@@ -354,7 +354,7 @@ a.btn:focus-visible {
     color: var(--ball);
     text-shadow:
         0.04em 0.06em 0 var(--red),
-        0 0 0.3em rgba(200, 55, 45, 0.7);
+        0 0 0.3em #272b35;
 }
 .bingo-titulo span {
     display: inline-block;
