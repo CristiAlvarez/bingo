@@ -146,7 +146,7 @@ button {
     padding: 10px 16px;
     cursor: pointer;
     background: var(--brass);
-    color: #1b1608;
+    color: #fff;
 }
 button.bingo {
     background: var(--red);
