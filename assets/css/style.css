@@ -3,10 +3,10 @@
     --panel: #fffaf0;
     --ink: #23302b;
     --muted: #6b756f;
-    --felt: #14463a;
-    --ball: #f6efe0;
-    --red: #c8372d;
-    --brass: #b98a2e;
+    --felt: #000;
+    --ball: #abb3df;
+    --red: #272b35;
+    --brass: #b16a779a;
     --line: #d9ceb0;
     box-sizing: border-box;
     padding-top: env(safe-area-inset-top, 0px);
@@ -64,7 +64,7 @@ h1 {
     place-items: center;
     font-size: 4.2rem;
     font-weight: 800;
-    border: 6px solid var(--red);
+    border: 1px solid var(--red);
     box-shadow:
         inset 0 0 0 6px var(--ball),
         0 6px 16px rgba(0, 0, 0, 0.4);
@@ -164,7 +164,7 @@ button:disabled {
 }
 button:focus-visible,
 input:focus-visible {
-    outline: 3px solid #fff;
+    outline: px solid #fff;
     outline-offset: 2px;
 }
 .info {
